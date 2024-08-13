@@ -1,10 +1,10 @@
 package initializers
 
-import {
+import (
 	"os"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-}
+)
 
 var DB *gorm.DB
 func ConnectToDB() {
