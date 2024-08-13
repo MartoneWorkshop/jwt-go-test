@@ -1,6 +1,6 @@
 package initializers
 
-import "project2/models"
+import "github.com/MartoneWorkshop/jwt-go-test/models"
 
 func SyncDatabase() {
 	DB.AutoMigrate(&models.User{})
