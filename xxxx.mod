@@ -3,7 +3,7 @@ module project2
 go 1.22.6
 
 require (
-	github.com/MartoneWorkshop/jwt-go-test v0.0.0-20240813173000-12f34f2bd3c1
+    github.com/MartoneWorkshop/jwt-go-test v0.0.0-20240813173000-12f34f2bd3c1/go.mod h1:dlLky8BqUOZY0B3/UOWmBP5Uipu0Gru10txUm+gZwe4=
 	github.com/gin-gonic/gin v1.10.0
 	github.com/joho/godotenv v1.5.1
 	golang.org/x/crypto v0.26.0
