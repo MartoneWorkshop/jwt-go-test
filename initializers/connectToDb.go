@@ -1,8 +1,8 @@
 package initializers
 import {
+	"os"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"github.com/MartoneWorkshop/jwt-go-test/models"
 }
 var DB *gorm.DB
 func ConnectToDB() {
