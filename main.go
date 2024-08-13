@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/MartoneWorkshop/jwt-go-test/initializers"
+	"project2/initializers"
 )
 
 func init() {

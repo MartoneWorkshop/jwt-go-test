@@ -3,8 +3,8 @@ package controllers
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"github.com/MartoneWorkshop/jwt-go-test/initializers"
-	"github.com/MartoneWorkshop/jwt-go-test/models"
+	"project2/initializers"
+	"project2/models"
 	"golang.org/x/crypto/bcrypt"
 )
 
