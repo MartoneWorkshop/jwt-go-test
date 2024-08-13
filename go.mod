@@ -1,4 +1,4 @@
-module v0
+module github.com/MartoneWorkshop/jwt-go-test
 
 go 1.22.6
 
