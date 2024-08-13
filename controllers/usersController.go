@@ -13,14 +13,14 @@ func Signup(c *gin.Context) {
 		Email 	 string
 		Password string
 	}
-	if c.Bind(&body) != nill {
+	if c.Bind(&body) != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
 			"error": "Failed to read body",
 		})
 		return
 	}
 	hash, err := bcrypt.GenerateFromPassword([]byte(body.Password), 10)
-	if err != nill {
+	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
 			"error": "Failed to hash password",
 		})
@@ -29,7 +29,7 @@ func Signup(c *gin.Context) {
 	user := models.User{Email: body.Email, Password: string(hash)}
 	result := initializers.DB.Create(&user)
 
-	f err != nill {
+	f err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
 			"error": "Failed to create user",
 		})
